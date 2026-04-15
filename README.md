@@ -3,29 +3,30 @@ Ann Arbor, Michigan | US citizen | [Email](mailto:eblackst2@gmail.com) | [Linked
 
 **SUMMARY** 
 
-Machine learning engineer with a Ph.D. in mathematics, building end-to-end deep learning and tabular ML systems. Experienced in developing and deploying computer vision models in PyTorch (including a custom object detection model served as a web app on Google Cloud Run) and building tabular machine-learning pipelines (tree-based ensembles, linear/logistic regression, stacked/ensemble models, etc.) on large datasets.
+Machine learning engineer with a Ph.D. in mathematics, building computer vision and tabular ML systems in PyTorch and scikit-learn. Experience developing custom object detection models, optimizing inference with ONNX/INT8 quantization, and deploying ML applications from training through production-style demos.
 
 **SKILLS & CERTIFICATIONS**
 
-* Programming & Tools: Python (NumPy, pandas, scikit-learn, matplotlib), SQL, LaTeX, Jupyter, Git, Mathematica, MATLAB  
-* ML & Computer Vision: PyTorch, torchvision, GPU training (CUDA), CNNs, custom object detection models  
+* Programming & Tools: Python (NumPy, pandas, scikit-learn, matplotlib), C++, LaTeX, Jupyter, Git, Mathematica, Linux  
+* ML & Computer Vision: PyTorch, torchvision, CUDA, CNNs, ONNX, Quantization, OpenCV  
 * Tabular ML: XGBoost, LightGBM, CatBoost, Random Forest, linear/logistic regression, Optuna, SHAP, cross validation  
-* Deployment & MLOps: Docker, FastAPI, Google Cloud Platform (Cloud Run)  
+* Deployment & MLOps: Docker, FastAPI, Google Cloud Platform (Cloud Run), ONNX Runtime
 * Certifications/Awards:  Erdős Institute [Data Science Boot Camp](https://www.erdosinstitute.org/certificates/spring-2025/data-science-boot-camp/elliot-blackstone/eaeaf444-44be-444f-a1aa-6d15d4e347ba), UofM [Honored Instructor](https://housing.umich.edu/michigan-housing-honored-instructors/), UCF [best dissertation award](https://sciences.ucf.edu/math/graduate/alumni/)
 
 **SELECTED PROJECTS** 
 
-**Automotive Object Detection**  \[[Online Demo](https://ssd-demo-app-884945419812.us-central1.run.app/)\] \[[GitHub](https://github.com/ElliotBlackstone/automotive-ssd-object-detection)\]                                         	  	                               **Fall 2025** 
+**Automotive Object Detection**  \[[Online Demo](https://ssd-demo-app-884945419812.us-central1.run.app/)\] \[[GitHub](https://github.com/ElliotBlackstone/automotive-ssd-object-detection)\]                                         	  	                               **2025-2026** 
 
-* Built a from scratch Single Shot Detector (SSD) object-detection model in PyTorch for dashcam imagery (cars, bikes, pedestrians, traffic lights), including a custom preprocessing pipeline, PyTorch Dataset/DataLoader, IoU-based cropping and augmentations, hard negative mining, and mAP@0.50 evaluation to tune architecture and training.  
-* Trained the model on a 29k-image automotive dataset with 195k annotated bounding boxes, reaching 0.53 mAP@0.50 on the test set after improving data augmentations and adding oversampling (\~15% gain over the initial baseline).  
-* Containerized the model with Docker and served it via a FastAPI app on Google Cloud Run as an image upload web demo.
+* Built a from-scratch Single Shot Detector in PyTorch for automotive object detection on a 30k-image dataset with 195k labeled bounding boxes; improved data augmentation, sampling, and training pipeline to reach 0.54 mAP@0.50 on the test set.
+* Re-architected the project into a modular training and inference pipeline and eliminated bottlenecks through profiling, mixed precision, batched target matching, batched NMS, and DataLoader tuning, reducing end-to-end training time from **50h to 25h**.
+* Developed gen-nms-package, a standalone PyTorch C++/CUDA extension for GIoU, DIoU, and CIoU non-maximum suppression on CPU and GPU, enabling compiled postprocessing beyond the standard torchvision NMS operators.
+* Built optimization and deployment stack around the model, including ONNX export, PyTorch/ONNX Runtime parity testing, static INT8 post-training quantization, benchmarking, and both browser-based and local real-time webcam/video inference.
 
-**Predicting Calorie Expenditure \-** *The Erdős Institute*  \[[LINK](https://www.erdosinstitute.org/certificates/summer-2025/data-science-boot-camp/elliot-blackstone/008dc3e4-1c7b-49e6-848b-bab3d772ed54)\] \[[GitHub](https://github.com/ElliotBlackstone/S25_Predict_Calories)\]                                        	  	**Summer 2025** 
+**Predicting Calorie Expenditure \-** *The Erdős Institute*  \[[LINK](https://www.erdosinstitute.org/certificates/summer-2025/data-science-boot-camp/elliot-blackstone/008dc3e4-1c7b-49e6-848b-bab3d772ed54)\] \[[GitHub](https://github.com/ElliotBlackstone/S25_Predict_Calories)\]                                        	  	**2025** 
 
 * Built a supervised learning pipeline to predict workout calorie expenditure from a 750k-row tabular dataset, with log-transform and engineered features, training and tuning linear, GAM, XGBoost, LightGBM, CatBoost, ensemble, and AutoGluon models using Optuna and SHAP, and achieving **4th place out of 4,318 teams** in a Kaggle competition.
 
-**Forecasting Inventory Demand \-** *The Erdős Institute*  \[[LINK](https://www.erdosinstitute.org/certificates/spring-2025/data-science-boot-camp/elliot-blackstone/eaeaf444-44be-444f-a1aa-6d15d4e347ba)\] \[[GitHub](https://github.com/ElliotBlackstone/EWinter25_Product_Inventory)\]                                                       **Spring 2025** 
+**Forecasting Inventory Demand \-** *The Erdős Institute*  \[[LINK](https://www.erdosinstitute.org/certificates/spring-2025/data-science-boot-camp/elliot-blackstone/eaeaf444-44be-444f-a1aa-6d15d4e347ba)\] \[[GitHub](https://github.com/ElliotBlackstone/EWinter25_Product_Inventory)\]                                                       **2025** 
 
 * Engineered an inventory demand prediction model for the Kaggle Grupo Bimbo competition on a 75 million row dataset, training LightGBM models with client/product aggregate features and adjusted demand from the previous 3 weeks to handle sparse data and cold-start scenarios and improve inventory-demand forecasts.
 
