@@ -1,26 +1,27 @@
 **Elliot Blackstone, Ph.D.**  
-Ann Arbor, Michigan | US citizen | [Email](mailto:eblackst2@gmail.com) | [LinkedIn](http://www.linkedin.com/in/elliot-blackstone-eblackstone) | [GitHub](https://github.com/ElliotBlackstone)
+San Jose, California | US citizen | [Email](mailto:eblackst2@gmail.com) | [LinkedIn](http://www.linkedin.com/in/elliot-blackstone-eblackstone) | [GitHub](https://github.com/ElliotBlackstone)
 
 **SUMMARY** 
 
-Machine learning engineer with a Ph.D. in mathematics, building computer vision and tabular ML systems in PyTorch and scikit-learn. Experience developing custom object detection models, optimizing inference with ONNX/INT8 quantization, and deploying ML applications from training through production-style demos.
+Computer vision and machine learning engineer with a Ph.D. in mathematics and hands-on experience developing, training, optimizing, and deploying deep learning models in PyTorch. Built custom convolutional and transformer-based object detection systems and optimized inference through quantization, ONNX deployment, and custom C++/CUDA kernels. Published mathematical research in top-tier peer-reviewed journals, bringing a strong foundation in mathematical modeling, optimization, and analytical problem solving to computer vision.
 
 **SKILLS & CERTIFICATIONS**
 
 * Programming & Tools: Python (NumPy, pandas, scikit-learn, matplotlib), C++, LaTeX, Jupyter, Git, Mathematica, Linux  
-* ML & Computer Vision: PyTorch, torchvision, CUDA, CNNs, ONNX, Quantization, OpenCV  
-* Tabular ML: XGBoost, LightGBM, CatBoost, Random Forest, linear/logistic regression, Optuna, SHAP, cross validation  
+* ML & Computer Vision: PyTorch, torchvision, CUDA, CNNs, transformers, ONNX, Quantization, OpenCV  
+* Tabular ML: XGBoost, LightGBM, CatBoost, Random Forest, linear/logistic regression, Optuna, SHAP
 * Deployment & MLOps: Docker, FastAPI, Google Cloud Platform (Cloud Run), ONNX Runtime
 * Certifications/Awards:  Erdős Institute [Data Science Boot Camp](https://www.erdosinstitute.org/certificates/spring-2025/data-science-boot-camp/elliot-blackstone/eaeaf444-44be-444f-a1aa-6d15d4e347ba), UofM [Honored Instructor](https://housing.umich.edu/michigan-housing-honored-instructors/), UCF [best dissertation award](https://sciences.ucf.edu/math/graduate/alumni/)
 
 **SELECTED PROJECTS** 
 
-**Automotive Object Detection**  \[[Online Demo](https://ssd-demo-app-884945419812.us-central1.run.app/)\] \[[GitHub](https://github.com/ElliotBlackstone/automotive-ssd-object-detection)\]                                         	  	                               **2025-2026** 
+**Automotive Object Detection**  \[[Online Demo](https://elliotblackstone.github.io/automotive-ssd-object-detection/)\] \[[GitHub](https://github.com/ElliotBlackstone/automotive-ssd-object-detection)\]                                         	  	                               **2026** 
 
-* Built a from-scratch Single Shot Detector in PyTorch for automotive object detection on a 30k-image dataset with 195k labeled bounding boxes; improved data augmentation, sampling, and training pipeline to reach 0.54 mAP@0.50 on the test set.
+* Built a from-scratch Single Shot Detector in PyTorch for automotive object detection on a 30k-image dataset with 195k labeled bounding boxes; improved data augmentation, sampling, and training pipeline to reach **0.54 mAP@0.50** on the test set.
 * Re-architected the project into a modular training and inference pipeline and eliminated bottlenecks through profiling, mixed precision, batched target matching, batched NMS, and DataLoader tuning, reducing end-to-end training time from **50h to 25h**.
 * Developed gen-nms-package, a standalone PyTorch C++/CUDA extension for GIoU, DIoU, and CIoU non-maximum suppression on CPU and GPU, enabling compiled postprocessing beyond the standard torchvision NMS operators.
 * Built optimization and deployment stack around the model, including ONNX export, PyTorch/ONNX Runtime parity testing, static INT8 post-training quantization, benchmarking, and both browser-based and local real-time webcam/video inference.
+* Designed and trained a from-scratch transformer-based object detector in PyTorch with 11.3M parameters, achieving 0.73 mAP@0.50 on the test set while outperforming the 24.5M-parameter SSD baseline across all five object classes.
 
 **Predicting Calorie Expenditure \-** *The Erdős Institute*  \[[LINK](https://www.erdosinstitute.org/certificates/summer-2025/data-science-boot-camp/elliot-blackstone/008dc3e4-1c7b-49e6-848b-bab3d772ed54)\] \[[GitHub](https://github.com/ElliotBlackstone/S25_Predict_Calories)\]                                        	  	**2025** 
 
